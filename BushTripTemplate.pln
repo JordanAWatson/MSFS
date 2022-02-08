@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SimBase.Document Type="AceXML" version="1,0">
+    
+	<!--This section only contains information relevant to altitude. Change <CruisingAlt> to the desired cruising altitude in feet.-->
+	<Descr>AceXML Document</Descr>
+    <FlightPlan.FlightPlan>
+        <Title> to </Title> <!-- ICAO1 to ICAO2.-->
+        <FPType>VFR</FPType>
+        <CruisingAlt>00000</CruisingAlt> <!-- Desired cruising altitude.-->
+        <DepartureID></DepartureID> <!-- Departure ICAO.-->
+        <DepartureLLA></DepartureLLA> <!-- Departure coordinates Lat,Long,Alt.-->
+        <DestinationID></DestinationID> <!-- Arrival ICAO.-->
+        <DestinationLLA></DestinationLLA> <!-- Arrival coordinates Lt,long,alt.-->
+        <Descr>, </Descr> <!-- ICAO1 to ICAO2.-->
+        <DeparturePosition></DeparturePosition> <!-- Departure Runway Number.-->
+        <DepartureName></DepartureName> <!-- Departure Airport Name.-->
+        <DestinationName></DestinationName> <!-- Arribal Airport Name.-->
+        <AppVersion>
+            <AppVersionMajor>10</AppVersionMajor>
+            <AppVersionBuild>61472</AppVersionBuild>
+        </AppVersion>
+		
+		
+		<!--This section will contain the entire flight plan. It can be created using LittleNavMap when exporting the plan in PLN format.
+		It's structure, so that each leg is properly recognized in game, Must be Airport > POI1 > ... > POIn > Airport.
+		Tagging is important, like so:
+		
+		Airports
+		
+			"id" is their ICAO code  
+			<ATCWaypointType> = Airport
+			<ICAO> Tag with the proper ICAO code.
+			<WorldPosition> containing latitude, longitude and altitude
+			
+		Example
+			
+			ATCWaypoint id="1G4">
+				<ATCWaypointType>Airport</ATCWaypointType>
+				<WorldPosition>N35° 59' 11.21",W113° 49' 0.46",+004789.50</WorldPosition>
+				<ICAO>
+					<ICAOIdent>1G4</ICAOIdent>
+				</ICAO>
+			</ATCWaypoint>
+			
+		
+		User Waypoints
+		
+			Replace ATCWaypoint id=”WPn” by ATCWaypoint id=”POIn”  
+			
+			<ATCWaypointType> = User
+			<WorldPosition> containing latitude, longitude and altitude
+
+		
+		Example
+			
+			<ATCWaypoint id="POI1">
+				<ATCWaypointType>User</ATCWaypointType>
+				<WorldPosition>N35° 55' 32.73",W113° 49' 40.65",+006000.00</WorldPosition>
+			</ATCWaypoint>
+		
+		-->
+
+
+		<!-- First leg-->
+		
+        <ATCWaypoint id="ICAO1">
+            <ATCWaypointType>Airport</ATCWaypointType>
+            <WorldPosition>N00° 00' 00.00",W00° 00' 0.00",+000000.00</WorldPosition>
+            <ICAO>
+                <ICAOIdent>ICAO1</ICAOIdent>
+            </ICAO>
+        </ATCWaypoint>
+        <ATCWaypoint id="POI1">
+            <ATCWaypointType>User</ATCWaypointType>
+            <WorldPosition>N00° 00' 00.00",W00° 00' 0.00",+000000.00</WorldPosition>
+        </ATCWaypoint>
+        <ATCWaypoint id="POI2">
+            <ATCWaypointType>User</ATCWaypointType>
+            <WorldPosition>N00° 00' 00.00",W00° 00' 0.00",+000000.00</WorldPosition>
+        </ATCWaypoint>
+        <ATCWaypoint id="ICAO2">
+            <ATCWaypointType>Airport</ATCWaypointType>
+            <WorldPosition>N00° 00' 00.00",W00° 00' 0.00",+000000.00</WorldPosition>
+            <ICAO>
+                <ICAOIdent>ICAO1</ICAOIdent>
+            </ICAO>
+        </ATCWaypoint>
+		
+		<!-- Second leg-->
+
+		<ATCWaypoint id="POI3">
+            <ATCWaypointType>User</ATCWaypointType>
+            <WorldPosition>N00° 00' 00.00",W00° 00' 0.00",+000000.00</WorldPosition>
+        </ATCWaypoint>
+        <ATCWaypoint id="POI4">
+            <ATCWaypointType>User</ATCWaypointType>
+            <WorldPosition>N00° 00' 00.00",W00° 00' 0.00",+000000.00</WorldPosition>
+        </ATCWaypoint>
+        <ATCWaypoint id="ICAO3">
+            <ATCWaypointType>Airport</ATCWaypointType>
+            <WorldPosition>N00° 00' 00.00",W00° 00' 0.00",+000000.00</WorldPosition>
+            <ICAO>
+                <ICAOIdent>ICAO3</ICAOIdent>
+            </ICAO>
+        </ATCWaypoint>
+    </FlightPlan.FlightPlan>
+</SimBase.Document>

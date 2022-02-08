@@ -1,0 +1,210 @@
+
+[Assistance]
+EventTriggersFileCount=1
+EventTriggersFile.0=EventTriggers
+
+[Main]
+Title=STRtest
+Description=KGSP, STR
+AppVersion=10.0.61355
+FlightVersion=1
+MissionType=BushTrip
+MissionLocation=KGSP
+OriginalFlight=
+FlightType=NORMAL
+StartingCameraCategory=Custom
+
+[Options]
+Sound=True
+Moonlight=True
+Save=False
+SaveOriginalFlightPlan=False
+TextDisplayPage=0
+SlewDisplayPage=1
+AxisIndicator=Off
+
+[Breifing]
+BreifingText="breifing test txt"
+
+[Sim.0]
+Sim=Cessna Skyhawk G1000 Asobo
+SimFile=runway.FLT
+
+[ResourcePath]
+Path=STRtest
+
+[ObjectFile]
+File=STRtest
+
+[Atc_Menu]
+Visible=False
+
+[Weather]
+UseWeatherFile=False
+
+[Assistance]
+Preset=ASSISTANCE_PRESET_BUSH_TRIP
+EventTriggersFileCount=1
+EventTriggersFile.0=BushTripEventTriggers
+
+[Departure]
+ICAO=KGSP
+RunwayNumber=22
+RunwayDesignator=NONE
+
+[Loading]
+;You can add and image for the loading screen and set custom text tips to be displayed while loading. Uncomment them if you want to use them
+ImageName=./images/Loading.png
+
+
+Tips0=$$:LOADING.TIPS.BUSH_TRIPS.1
+Tips1=$$:LOADING.TIPS.BUSH_TRIPS.2
+Tips2=$$:LOADING.TIPS.BUSH_TRIPS.3
+Tips3=$$:LOADING.TIPS.BUSH_TRIPS.4
+Tips4=$$:LOADING.TIPS.BUSH_TRIPS.5
+Tips5=$$:LOADING.TIPS.C172_002
+
+[Panels]
+Panel.On=True
+HUD.On=False
+
+[Window.1]
+Order=255
+Active=True
+Undocked=False
+Maximized=True
+ScreenUniCoords=0, 0, 0, 0
+UndocCoords=0, 0, 0, 0
+
+[ATC_AgentManager]
+NumberofAgents=0
+
+[ATC_Aircraft.0]
+ActiveFlightPlan=True
+RequestedFlightPlan=False
+AcState=ACSTATE_REQUEST_TAXI_CLEARANCE_OUT_VFR_ATIS
+Waypoint.0=, KGSP, , KGSP, A, N34° 53.74', W82° 13.13', +000952.50, , , , , , NONE, 0, 0, -1, 0, 0,  
+Waypoint.1=, , , POI1, U, N34° 51.95', W82° 14.50', +001552.50, , , , , , NONE, 0, 0, -1, 0, 0,  
+Waypoint.2=, , , POI2, U, N35° 51.19', W82° 6.68', +003650.00, , , , , , NONE, 0, 0, -1, 0, 0,  
+Waypoint.3=, STR, , STR, A, N35° 51.19', W82° 6.68', +003650.00, , , , , , NONE, 0, 0, -1, 0, 0,  
+NumberofWaypoints=4
+ClearanceFlags=882
+CtCur=CLEARANCE_NONE
+WaypointNext=1
+AltCleared=-1
+HdgAssigned=-1
+SquawkAssigned=4608
+LandingSequence=LANDING_NONE
+DepartureRequest=DEPARTURE_VFR_REQUEST_NONE
+ParkingRequest=PARKING_NAME_NONE
+ParkingTypeRequest=PARKING_TYPE_NONE
+PatternLeg=PATTERN_LEG_NONE
+ApproachIndex=-1
+ApproachTransitionIndex=-1
+ApproachRequestIndex=-1
+ApproachTransitionRequestIndex=-1
+RunwayIndex=-1
+RunwayRequestIndex=-1
+ParkingIndex=-1
+FlightFollowing=FLIGHT_FOLLOWING_NO
+AirspaceTransition=AIRSPACE_TRANSITION_NONE
+BVAirspaceTransition=BV_TYPE_NONE
+BVAirspaceTransitionReq=BV_TYPE_NONE
+TakeoffSequence=TAKEOFF_SEQUENCE_NONE
+LandingSequenceNumber=-1
+TaxiRouteCurrent=-1
+CruisingAltitude=5500
+RequestedCruisingAltitude=-1
+ExpectedAltitude=-1
+AircraftSignature=1,0
+
+[ATC_ActiveFlightPlan.0]
+title=STRtest
+description=KGSP to STR
+type=VFR
+routetype=0
+cruising_altitude=5000
+departure_id=KGSP, N34° 53.74', W82° 13.13', +000952.50
+departure_position=22
+destination_id=STR, N35° 51.19', W82° 6.68', +003650.00
+departure_name=KGSP
+destination_name=STR
+waypoint.0=, KGSP, , KGSP, A, N34° 53.74', W82° 13.13', +000952.50, , , , , , NONE, 0, 0, -1, 0, 0,  
+waypoint.1=, POI1 , , POI1, U, N34° 51.95', W82° 14.50', +001552.50, , , , , , NONE, 0, 0, -1, 0, 0,  
+waypoint.2=, POI2 , , POI2, U, N35° 51.19', W82° 6.68', +003650.00, , , , , , NONE, 0, 0, -1, 0, 0,  
+waypoint.3=, STR, , STR, A, N35° 51.19', W82° 6.68', +003650.00, , , , , , NONE, 0, 0, -1, 0, 0,  
+
+[ATC_AircraftManager]
+NumberofAircraft=1
+
+[ATC_MessageSystem]
+FrequencyNodes=0
+
+[GPS_Engine]
+Filename=STRtest
+position=N0° 0.02', E0° 0.84', +000003.85
+Time=-1
+TimeWP=51190
+ArriveTime=1989
+CountWP=4
+NextWP=1
+PlaneStarted=False
+WpInfo0=58, 0, 290, 0, 0, 28.0, 0.0, 0.0
+WpInfo2=127, 0, 1524, 0, 0, 0.0, 0.6, 0.0
+WpInfo4=128, 0, 1524, 0, 0, 0.0, 0.9, 0.0
+WpInfo5=58, 0, 1112, 0, 0, 0.0, 1.9, 0.0
+CountFP=0
+
+[DateTimeSeason]
+Season=Summer
+Year=2022
+Day=38
+Hours=12
+Minutes=13
+Seconds=10.777753829956054688
+UseZuluTime=False
+
+[SimVars.0]
+Latitude=N34° 53' 35.44"
+Longitude=W82° 12' 57.92"
+Altitude=+000952.50
+Pitch=0
+Bank=0
+Heading=115.75034329667688837
+PVelBodyAxis=0
+BVelBodyAxis=0
+HVelBodyAxis=0
+XVelBodyAxis=0
+YVelBodyAxis=0
+ZVelBodyAxis=0
+SimOnGround=True
+OnPlatformHeight=-9999999999
+
+[Slew.0]
+Active=False
+
+[Freeze.0]
+Location=False
+Altitude=False
+Attitude=False
+
+[Fuel.0]
+TankSelector=All
+TankSelector1=All
+Center=100
+LeftMain=90
+RightMain=90
+LeftAux=100
+RightAux=100
+LeftTip=100
+RightTip=100
+Center 2=100
+Center 3=100
+External 1=100
+External 2=100
+
+[Payload.0]
+PayloadList= 85.0, 85.0,   0.0,   0.0,   0.0
+
+[Multiplayer]
+Status=0
